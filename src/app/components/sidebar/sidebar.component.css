@@ -1,0 +1,47 @@
+.sidebar-container{
+    background-color: white;
+    width: 20%;
+    height: 60vh;
+    margin-left: 1%;
+    border-radius: 10px;
+    transition: .3s;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0px 10px 10px 1px var(--shadow);
+}
+.title{
+padding: 5%;
+box-sizing: border-box;
+
+}
+.buttons{
+    height: 70%;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
+
+.button{
+    cursor: pointer;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20%;
+    padding-right: 20%;
+    transition: .3s;
+}
+.button i{
+    margin-right: 20px;
+}
+.button:hover{
+    background-color: var(--shadow);
+    font-size: 25px;
+}

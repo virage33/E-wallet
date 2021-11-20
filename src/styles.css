@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --main-color:#f7f7f8;
+    --accent-color:#e94e41;
+    --alt-color: #f3f0f0;
+    --font-color: #2c2c31;
+    --font-color2:#c8c2c2;
+    --shadow:rgb(156, 201, 221);
+    --font-family: Daaron-regular;
+    --font-bold: Daaron-Bold;
+    --font-round: Daaron-Round;
+}
+
+
+@font-face {
+    font-family: Daaron-Bold;
+    src: url(./assets/font/Daaron-Bold.otf);
+  }
+  @font-face {
+    font-family: Daaron-regular;
+    src: url(./assets/font/Daaron-regular.otf);
+  }
+  @font-face {
+    font-family: Daaron-Round;
+    src: url(./assets/font/Daaron-Round.otf);
+  }
+
