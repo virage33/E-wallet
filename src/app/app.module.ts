@@ -7,6 +7,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WalletsComponent } from './components/wallets/wallets.component';
+import { Dashboard1Component } from './components/dashboard1/dashboard1.component';
+import {SidebarModule} from 'primeng/sidebar';
+import {ButtonModule} from 'primeng/button';
+import { CurrencyconverterComponent } from './components/currencyconverter/currencyconverter.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { WalletsComponent } from './components/wallets/wallets.component';
     SidebarComponent,
     HomeComponent,
     DashboardComponent,
-    WalletsComponent
+    WalletsComponent,
+    Dashboard1Component,
+    CurrencyconverterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SidebarModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

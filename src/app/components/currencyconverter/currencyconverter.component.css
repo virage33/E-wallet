@@ -1,0 +1,21 @@
+.converter{
+    width: 300px;
+    padding: 3%;
+    border-radius: 20px;
+    background-color: #f9fbfc;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px 0px gray;
+}
+.btn{
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mb-3{
+    margin-top: 20px;
+}

@@ -1,3 +1,73 @@
-<div class="btn btn-primary action" >
-    Order now 
- </div>
+<div class="main-container">
+    <div class="left">
+        <app-sidebar></app-sidebar>
+    </div>
+    
+    <div class="centre">
+        <h2>Wallets</h2>
+        <div class="wallets">
+            <ul class="wallet-list">
+                <li class="wallet"><div class="wallet-container">
+                    <div class="first">
+                        <p>Address:</p>
+                    </div>
+                    <div class="second">
+                        <h4>NAIRA</h4>
+                    </div>
+                    <div class="third">
+                        <p>Balance</p>
+                        <div class="buttons">
+                            <button class="btn btn-primary">Withdraw</button>
+                            <button class="btn btn-primary">Deposit</button>
+                        </div>
+                    </div>
+                </div></li>
+
+                <li class="wallet"><div class="wallet-container pound">
+                    <div class="first">
+                        <p>Address:</p>
+                    </div>
+                    <div class="second">
+                        <h4>Pounds</h4>
+                    </div>
+                    <div class="third">
+                        <p>Balance</p>
+                        <div class="buttons">
+                            <button class="btn btn-primary">Withdraw</button>
+                            <button class="btn btn-primary">Deposit</button>
+                        </div>
+                    </div>
+                </div></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="right">
+        <div class="top-functions">
+            <div class="btn btn-primary">
+                Create new wallet
+            </div>
+        </div>
+
+        <div class="converter-cont">
+            <div class="converter">
+                <h5>Currency converter</h5>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Naira</label>
+                      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Cedes</label>
+                      <input type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                     
+                    </div>
+                    <button type="Convert" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

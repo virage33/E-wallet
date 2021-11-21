@@ -1,0 +1,261 @@
+.main-container{
+    background-color: #f1f5fb;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: .1fr 1fr .05fr;
+    grid-template-rows: .1fr 1fr .05fr ;
+    grid-template-areas: "top-left top-middle top-right"
+                         "left middle right"
+                         "bottom-left bottom-middle bottom-right";
+    box-sizing: border-box;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+.middle-top{
+    grid-area: top-middle;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 1%;
+    justify-content: space-between;
+    
+}
+.top-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    width: 12%;
+
+}
+.nav-link{
+    margin-right: 10px;
+}
+.profile-photo{
+    grid-area: top-right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: black;
+}
+.middle-container{
+    background-color: #f9fbfc    ;
+    border-radius: 20px;
+    grid-area: middle;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+
+
+.middle-top-container{
+  
+    border-radius: 20px 20px 0 0;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.middle-bottom-container{
+  
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1%;
+    overflow: hidden;
+}
+.middle-top-container-left{
+   
+    width: 49.5%;
+    height: 100%;
+}
+
+.portfolio-data-container{
+    height: 80%;
+    display: flex;
+    width: 100%;
+   
+}
+
+.portfolio-charts{
+    width: 60%;
+    background-color: brown;
+    height: 100%;
+}
+.charts-container-partition{
+    height: 100%;
+    width: 40%;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  ;
+}
+.charts-container-partition h6{
+    font-weight: 300;
+}
+.top-partition{
+    background-color:#f9fbfc;
+    height: 30%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    box-shadow: 0 2px 5px 0px gray;
+}
+.top-partition h4{
+    line-height: 0;
+    
+}
+.bottom-partition{
+    height: 67%;
+    width: 100%;
+    background-color:  #f1f5fb;
+    border-radius: 20px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 0;
+    box-shadow: 0 2px 5px 0px gray;
+}
+
+.middle-top-container-right{
+    width: 49.5%;
+    height: 100%;
+   
+}
+.wallet-section-functions{
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    font-size: 20px;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+.add-btn{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.wallet-container{
+    width: 170px;
+    margin-right: 20px;
+    
+}
+.wallets{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    
+    padding: 2%;
+    padding-left: 50px;
+}
+.wallet{
+    height:100%;
+    width: 170px;
+    border-radius: 20px;
+    background-color: #FD5956;
+    box-shadow: 0 2px 5px 0px gray;
+    transition: .3s;
+}
+.wallet:hover{
+    transform: translateY(-10px);
+    box-shadow:0 20px 10px 0px rgba(63, 63, 63, 0.281);
+}
+.balance{
+    margin-top: 10px;
+}
+
+
+.middle-bottom-container-right{
+    width: 49.5%;
+    height: 100%;
+    padding: 1%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.todays-prices{
+    padding: 1%;
+    width: 50%;
+    height: 100%;
+    
+    overflow: auto;
+    border-radius: 20px;
+}
+.currency{
+    margin-top:8% ;
+    display: flex;
+    height: 20%;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #f9fbfc ;
+    box-shadow: 1px 1px 10px 1px rgba(88, 87, 87, 0.452);
+}
+.buy{
+    color: green;
+}
+.sell{
+    color: red;
+}
+
+.middle-bottom-container-left{
+    width: 49.5%;
+    height: 100%;
+    background-color: #f1f5fb;
+    border-radius: 20px;
+    padding: 1%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.market-section-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    align-items: center;
+}
+.markets{
+    overflow: auto;
+
+}
+.market-list{
+    list-style: none;
+    overflow: hidden;
+}
+
+.mark{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(183, 233, 241, 0.336);
+}
