@@ -12,6 +12,10 @@ import {SidebarModule} from 'primeng/sidebar';
 import {ButtonModule} from 'primeng/button';
 import { CurrencyconverterComponent } from './components/currencyconverter/currencyconverter.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
+import { LandingpageComponent } from './components/landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { TransactionsComponent } from './components/transactions/transactions.co
     WalletsComponent,
     Dashboard1Component,
     CurrencyconverterComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotpasswordComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,

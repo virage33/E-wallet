@@ -5,17 +5,19 @@
         <i class="bi bi-search"></i>
       </div>
       <div class="top-menu">
+        <div class="notification"><i class="bi bi-bell"></i></div>
         <div class="settings">settings <i class="bi bi-gear"></i></div>
   
         <div class="logout" routerLinkActive="active" routerLink="">Logout  <i class="bi bi-box-arrow-right"></i></div>
-      </div>
+        
+    </div>
     </div>
     <div class="profile-photo">
       <div class="profile-image"></div>
     </div>
     <div class="left-container">
       <div class="button"><i class="bi bi-speedometer2"></i></div>
-      <div class="button"><i class="bi bi-arrow-left-right"></i></div>
+      <div class="button" (click)="gotoPage('transactions')"><i class="bi bi-arrow-left-right"></i></div>
     </div>
   
   
