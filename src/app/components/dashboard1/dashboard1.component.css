@@ -108,9 +108,9 @@ body{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    background-image: url("../../../assets/27527-4-sound-wave-transparent-picture.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../../../assets/pngfind.com-blue-wave-png-1989412.png");
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 .middle-bottom-container{
@@ -231,8 +231,6 @@ body{
     width: 170px;
     border-radius: 20px;
     position: relative;
-   /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
- /* background-image: linear-gradient(to right bottom, #d93894, #c7359e, #b136a7, #9739ae, #793db4, #6355c8, #4568d8, #007ae3, #009ff7, #00c0fc, #00dff8, #5ffbf1); */   
     box-shadow: 0 2px 5px 0px gray;
     transition: .3s;
     box-sizing: border-box;

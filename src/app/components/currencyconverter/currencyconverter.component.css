@@ -6,10 +6,15 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px 0px gray;
+    position: relative;
+    /* background-color: rgba(188, 229, 245, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%); */
 }
+
 .btn{
     margin-right: 20px;
-    border-radius: 20px;
+  
+    /* box-shadow: 1px 1px 10px 1px rgba(88, 87, 87, 0.452); */
 }
 .btn-group{
     display: flex;
