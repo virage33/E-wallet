@@ -172,7 +172,7 @@ body{
 .bottom-partition{
     height: 67%;
     width: 100%;
-    background-color:  #f1f5fb;
+    background-image: linear-gradient(to right bottom, #f2cc18, #f4d414, #f6dc11, #f7e50d, #f8ed0b, #faed1b, #fbee25, #fdee2d, #ffe63d, #ffde49, #fed655, #fbcf5f);
     border-radius: 20px;
     padding-left: 10%;
     display: flex;
@@ -182,11 +182,21 @@ body{
     box-shadow: 0 2px 5px 0px gray;
     position: relative;
 }
+.engraved {
+    
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(245,245,245,0.5) 3px 5px 1px;
+ }
+
 
 .middle-top-container-right{
     width: 49.5%;
     height: 100%;
-   
+    
 }
 .wallet-section-functions{
     display: flex;
@@ -206,13 +216,13 @@ body{
 .wallet-container{
     width: 170px;
     margin-right: 20px;
-    
+    color: black;
 }
 .wallets{
     display: flex;
     height: 80%;
     width: 100%;
-    
+   
     padding: 2%;
     padding-left: 50px;
 }
@@ -227,13 +237,16 @@ body{
     transition: .3s;
     box-sizing: border-box;
     overflow: hidden;
+    padding: 3%;
+    
+   
 }
 .wallet:hover{
     transform: translateY(-10px);
     box-shadow:0 20px 10px 0px rgba(63, 63, 63, 0.281);
 }
 
-.account-address{
+.wallet-address{
     transform: rotateZ(-90deg);
     position: absolute;
     letter-spacing: 5px;
@@ -251,6 +264,18 @@ body{
 .wallet-icon img{
     width: 100%;
 }
+.wallet-buttons{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+}
+.btn-outline-dark{
+    width: 90px;
+}
+
 .balance{
     margin-top: 10px;
 }
@@ -260,7 +285,7 @@ body{
     width: 49.5%;
     height: 100%;
     padding: 1%;
-    
+    /* background-image: url("../../../assets/158123-sound-free-transparent-image-hq.png"); */
     display: flex;
     justify-content: space-between;
 }
@@ -283,6 +308,7 @@ body{
     border-radius: 10px;
     align-items: center;
     background-color: #f9fbfc ;
+    
     box-shadow: 1px 1px 10px 1px rgba(88, 87, 87, 0.452);
 }
 .buy{
