@@ -3,7 +3,8 @@ body{
 }
 .main-container{
     /* background-color: #f1f5fb; */
-    
+    background-image: linear-gradient(to right bottom, #d3ddde, #dbe3e5, #e4e9ec, #eceff2, #f4f5f7, #eceef1, #e5e6ea, #dddfe4, #c2c9d1, #a5b4bc, #89a0a6, #6e8c8d);
+   
     height: 100vh;
     width: 100%;
     display: grid;
@@ -91,7 +92,7 @@ body{
     background-color: black;
 }
 .middle-container{
-    background-color: #f9fbfc    ;
+    background-color: #f9fbfc8a    ;
     border-radius: 20px;
     grid-area: middle;
     display: grid;
