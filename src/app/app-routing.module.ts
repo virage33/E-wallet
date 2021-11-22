@@ -4,12 +4,14 @@ import  {DashboardComponent} from './components/dashboard/dashboard.component'
 import { HomeComponent } from './components/home/home.component'; 
 import { WalletsComponent } from './components/wallets/wallets.component';
 import  {Dashboard1Component} from'./components/dashboard1/dashboard1.component';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
   {path:"",component:HomeComponent},
   {path:"wallets",component:WalletsComponent},
-  {path:"dashboard1",component:Dashboard1Component} 
+  {path:"dashboard1",component:Dashboard1Component},
+  {path:"transactions", component:TransactionsComponent} 
 ];
 
 @NgModule({

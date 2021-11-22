@@ -11,6 +11,7 @@ import { Dashboard1Component } from './components/dashboard1/dashboard1.componen
 import {SidebarModule} from 'primeng/sidebar';
 import {ButtonModule} from 'primeng/button';
 import { CurrencyconverterComponent } from './components/currencyconverter/currencyconverter.component';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CurrencyconverterComponent } from './components/currencyconverter/curre
     DashboardComponent,
     WalletsComponent,
     Dashboard1Component,
-    CurrencyconverterComponent
+    CurrencyconverterComponent,
+    TransactionsComponent
   ],
   imports: [
     BrowserModule,

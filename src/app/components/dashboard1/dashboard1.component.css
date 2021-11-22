@@ -1,5 +1,8 @@
+body{
+    overflow: hidden;
+}
 .main-container{
-    background-color: #f1f5fb;
+    /* background-color: #f1f5fb; */
     height: 100vh;
     width: 100%;
     display: grid;
@@ -9,13 +12,27 @@
                          "left middle right"
                          "bottom-left bottom-middle bottom-right";
     box-sizing: border-box;
-
+    overflow: hidden;
+    position: relative;
 }
+
+
+
+  .wallet,.main-container,.portfolio-charts:before {
+    background-color: rgba(188, 229, 245, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+  } 
 
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .left-container{
     grid-area: left;
@@ -24,6 +41,13 @@
     align-items: center;
     justify-content: center;
     font-size: 35px;
+    cursor: pointer;
+    z-index: 1;
+}
+.left-container div:hover{
+    color: var(--accent-color);
+    transform: translateY(-3px);
+    transition: .3s;
 }
 .middle-top{
     grid-area: top-middle;
@@ -32,24 +56,32 @@
     padding-left: 5%;
     padding-right: 1%;
     justify-content: space-between;
-    
+    z-index: 1;
 }
 .top-menu{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    width: 12%;
-
+    width: 13%;
+    cursor: pointer;
+    z-index: 1;
+}
+.top-menu div:hover{
+    color: var(--accent-color);
+    transform: translateY(-1px);
+    transition: .3s;
 }
 .nav-link{
     margin-right: 10px;
+    z-index: 1;
 }
 .profile-photo{
     grid-area: top-right;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .profile-image{
     height: 50px;
@@ -65,7 +97,7 @@
     grid-template-rows: 1fr 1fr;
     box-sizing: border-box;
     overflow: hidden;
-    
+    z-index: 1;
 }
 
 
@@ -76,7 +108,11 @@
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    background-image: url("../../../assets/27527-4-sound-wave-transparent-picture.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .middle-bottom-container{
   
     border-radius: 0 0 20px 20px;
@@ -96,13 +132,15 @@
     height: 80%;
     display: flex;
     width: 100%;
+    justify-content: space-between;
    
 }
 
 .portfolio-charts{
-    width: 60%;
-    background-color: brown;
+    width: 57%;
+   
     height: 100%;
+    position: relative;
 }
 .charts-container-partition{
     height: 100%;
@@ -142,6 +180,7 @@
     justify-content: center;
     line-height: 0;
     box-shadow: 0 2px 5px 0px gray;
+    position: relative;
 }
 
 .middle-top-container-right{
@@ -181,13 +220,36 @@
     height:100%;
     width: 170px;
     border-radius: 20px;
-    background-color: #FD5956;
+    position: relative;
+   /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+ /* background-image: linear-gradient(to right bottom, #d93894, #c7359e, #b136a7, #9739ae, #793db4, #6355c8, #4568d8, #007ae3, #009ff7, #00c0fc, #00dff8, #5ffbf1); */   
     box-shadow: 0 2px 5px 0px gray;
     transition: .3s;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .wallet:hover{
     transform: translateY(-10px);
     box-shadow:0 20px 10px 0px rgba(63, 63, 63, 0.281);
+}
+
+.account-address{
+    transform: rotateZ(-90deg);
+    position: absolute;
+    letter-spacing: 5px;
+    right: -20%;
+    bottom: 40%;
+    color: grey;
+   
+    text-shadow: rgba(123, 157, 209, 0.5) 3px 5px 1px;
+}
+
+.wallet-icon{
+    width: 50px;
+    height: 50px;
+}
+.wallet-icon img{
+    width: 100%;
 }
 .balance{
     margin-top: 10px;
@@ -201,6 +263,9 @@
     
     display: flex;
     justify-content: space-between;
+}
+.converter{
+    margin-left: 3%;
 }
 .todays-prices{
     padding: 1%;
