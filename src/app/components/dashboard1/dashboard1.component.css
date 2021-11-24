@@ -47,7 +47,7 @@ body{
     z-index: 1;
 }
 .left-container div:hover{
-    color: var(--accent-color);
+    color: rgb(44, 42, 160);
     transform: translateY(-3px);
     transition: .3s;
 }
@@ -70,7 +70,7 @@ body{
     z-index: 1;
 }
 .top-menu div:hover{
-    color: var(--accent-color);
+    color: rgb(77, 77, 206);
     transform: translateY(-1px);
     transition: .3s;
 }
@@ -111,7 +111,8 @@ body{
     display: flex;
     justify-content: space-between;
     background-image: url("../../../assets/pngfind.com-blue-wave-png-1989412.png");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: right;
     background-size: contain;
 }
 

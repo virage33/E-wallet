@@ -15,7 +15,7 @@ import { TransactionsComponent } from './components/transactions/transactions.co
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
-import { LandingpageComponent } from './components/landingpage/landingpage.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { LandingpageComponent } from './components/landingpage/landingpage.compo
     LoginComponent,
     RegisterComponent,
     ForgotpasswordComponent,
-    LandingpageComponent
+   
   ],
   imports: [
     BrowserModule,
