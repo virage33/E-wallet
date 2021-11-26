@@ -5,7 +5,6 @@ import { HomeComponent } from './components/home/home.component';
 import { WalletsComponent } from './components/wallets/wallets.component';
 import  {Dashboard1Component} from'./components/dashboard1/dashboard1.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
-
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 

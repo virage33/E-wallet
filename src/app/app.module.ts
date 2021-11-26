@@ -15,6 +15,10 @@ import { TransactionsComponent } from './components/transactions/transactions.co
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
+import { DepositpageComponent } from './components/depositpage/depositpage.component';
+import { WithdrawalpageComponent } from './components/withdrawalpage/withdrawalpage.component';
+import { ErrorpageComponent } from './components/errorpage/errorpage.component';
+import { AdmindashboardComponent } from './components/admindashboard/admindashboard.component';
 
 
 @NgModule({
@@ -30,6 +34,10 @@ import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassw
     LoginComponent,
     RegisterComponent,
     ForgotpasswordComponent,
+    DepositpageComponent,
+    WithdrawalpageComponent,
+    ErrorpageComponent,
+    AdmindashboardComponent,
    
   ],
   imports: [
